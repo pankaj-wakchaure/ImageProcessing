@@ -1,0 +1,57 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageProcessing", "ImageProcessing\ImageProcessing.csproj", "{B44E36C2-CE4B-4F0C-8AD3-2A6C6D9C7B12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageVideoProcessing", "ImageVideoProcessing\ImageVideoProcessing.csproj", "{E0A3CF15-9F29-445F-AB97-D2E26D21CB7D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageVideoGrabber", "ImageVideoGrabber\ImageVideoGrabber.csproj", "{F9034876-01CD-4545-A7C8-83E0FD412AE5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataLayer", "DataLayer\DataLayer.csproj", "{B51C9992-AE03-4EEA-98AC-E066A72212FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonImplementation", "CommanImplementation\CommonImplementation.csproj", "{1600CCA6-9439-4FA1-9DA8-35FCBBF66257}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Test", "Test", "{4A6A1070-E16F-46F0-A697-B4E0FBB49DE6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test.ImageVideoGrabber", "Test.ImageVideoGrabber\Test.ImageVideoGrabber.csproj", "{FEEB1C54-BF9A-4674-83A4-7120BAFED4B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B44E36C2-CE4B-4F0C-8AD3-2A6C6D9C7B12}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B44E36C2-CE4B-4F0C-8AD3-2A6C6D9C7B12}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B44E36C2-CE4B-4F0C-8AD3-2A6C6D9C7B12}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B44E36C2-CE4B-4F0C-8AD3-2A6C6D9C7B12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0A3CF15-9F29-445F-AB97-D2E26D21CB7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0A3CF15-9F29-445F-AB97-D2E26D21CB7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0A3CF15-9F29-445F-AB97-D2E26D21CB7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0A3CF15-9F29-445F-AB97-D2E26D21CB7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9034876-01CD-4545-A7C8-83E0FD412AE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F9034876-01CD-4545-A7C8-83E0FD412AE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F9034876-01CD-4545-A7C8-83E0FD412AE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F9034876-01CD-4545-A7C8-83E0FD412AE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B51C9992-AE03-4EEA-98AC-E066A72212FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B51C9992-AE03-4EEA-98AC-E066A72212FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B51C9992-AE03-4EEA-98AC-E066A72212FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B51C9992-AE03-4EEA-98AC-E066A72212FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1600CCA6-9439-4FA1-9DA8-35FCBBF66257}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1600CCA6-9439-4FA1-9DA8-35FCBBF66257}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1600CCA6-9439-4FA1-9DA8-35FCBBF66257}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1600CCA6-9439-4FA1-9DA8-35FCBBF66257}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEEB1C54-BF9A-4674-83A4-7120BAFED4B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEEB1C54-BF9A-4674-83A4-7120BAFED4B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEEB1C54-BF9A-4674-83A4-7120BAFED4B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEEB1C54-BF9A-4674-83A4-7120BAFED4B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FEEB1C54-BF9A-4674-83A4-7120BAFED4B2} = {4A6A1070-E16F-46F0-A697-B4E0FBB49DE6}
+	EndGlobalSection
+EndGlobal

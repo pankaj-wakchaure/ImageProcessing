@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ImageDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Image">
+    <Key>
+      <PropertyRef Name="ImageId" />
+    </Key>
+    <Property Name="ImageId" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Length" Type="bigint" />
+    <Property Name="Name" Type="nvarchar" MaxLength="200" />
+    <Property Name="Height" Type="int" />
+    <Property Name="Width" Type="int" />
+    <Property Name="ImagePath" Type="nvarchar" MaxLength="300" />
+    <Property Name="IsImageContainsFace" Type="bit" />
+    <Property Name="IsImageContainsText" Type="bit" />
+    <Property Name="RedPercentage" Type="int" />
+    <Property Name="GreenPercentage" Type="int" />
+    <Property Name="BluePercentage" Type="int" />
+    <Property Name="FaceCount" Type="int" />
+    <Property Name="Checksum" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreatedDatetime" Type="datetime" />
+    <Property Name="UpdatedDatetime" Type="datetime" />
+    <Property Name="CreatedBy" Type="int" />
+    <Property Name="UpdatedBy" Type="int" />
+    <Property Name="IsDeleted" Type="bit" />
+    <Property Name="Description" Type="nvarchar(max)" />
+  </EntityType>
+  <EntityType Name="ImageContent">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Fk_ImageId" Type="int" />
+    <Property Name="DiscountText" Type="nvarchar(max)" />
+    <Property Name="OfferText" Type="nvarchar(max)" />
+    <Property Name="ImageContent" Type="nvarchar(max)" />
+    <Property Name="IsDeleted" Type="bit" />
+  </EntityType>
+  <Association Name="FK_ImageContent_Image">
+    <End Role="Image" Type="Self.Image" Multiplicity="0..1" />
+    <End Role="ImageContent" Type="Self.ImageContent" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Image">
+        <PropertyRef Name="ImageId" />
+      </Principal>
+      <Dependent Role="ImageContent">
+        <PropertyRef Name="Fk_ImageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ImageDBModelStoreContainer">
+    <EntitySet Name="Image" EntityType="Self.Image" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ImageContent" EntityType="Self.ImageContent" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_ImageContent_Image" Association="Self.FK_ImageContent_Image">
+      <End Role="Image" EntitySet="Image" />
+      <End Role="ImageContent" EntitySet="ImageContent" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

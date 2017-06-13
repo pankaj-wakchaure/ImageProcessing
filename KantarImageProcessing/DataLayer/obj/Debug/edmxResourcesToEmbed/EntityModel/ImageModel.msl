@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ImageDBModelStoreContainer" CdmEntityContainer="ImageDBEntities">
+    <EntitySetMapping Name="Images">
+      <EntityTypeMapping TypeName="ImageDBModel.Image">
+        <MappingFragment StoreEntitySet="Image">
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="UpdatedBy" ColumnName="UpdatedBy" />
+          <ScalarProperty Name="CreatedBy" ColumnName="CreatedBy" />
+          <ScalarProperty Name="UpdatedDatetime" ColumnName="UpdatedDatetime" />
+          <ScalarProperty Name="CreatedDatetime" ColumnName="CreatedDatetime" />
+          <ScalarProperty Name="Checksum" ColumnName="Checksum" />
+          <ScalarProperty Name="FaceCount" ColumnName="FaceCount" />
+          <ScalarProperty Name="BluePercentage" ColumnName="BluePercentage" />
+          <ScalarProperty Name="GreenPercentage" ColumnName="GreenPercentage" />
+          <ScalarProperty Name="RedPercentage" ColumnName="RedPercentage" />
+          <ScalarProperty Name="IsImageContainsText" ColumnName="IsImageContainsText" />
+          <ScalarProperty Name="IsImageContainsFace" ColumnName="IsImageContainsFace" />
+          <ScalarProperty Name="ImagePath" ColumnName="ImagePath" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Length" ColumnName="Length" />
+          <ScalarProperty Name="ImageId" ColumnName="ImageId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ImageContents">
+      <EntityTypeMapping TypeName="ImageDBModel.ImageContent">
+        <MappingFragment StoreEntitySet="ImageContent">
+          <ScalarProperty Name="IsDeleted" ColumnName="IsDeleted" />
+          <ScalarProperty Name="ImageContent1" ColumnName="ImageContent" />
+          <ScalarProperty Name="OfferText" ColumnName="OfferText" />
+          <ScalarProperty Name="DiscountText" ColumnName="DiscountText" />
+          <ScalarProperty Name="Fk_ImageId" ColumnName="Fk_ImageId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
